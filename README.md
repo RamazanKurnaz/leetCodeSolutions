@@ -13,12 +13,14 @@ Do not allocate extra space for another array. You must do this by modifying the
 
 ### Example 1:
 
-#### Input: nums = [1,1,1,2,2,3]
-#### Output: 5, nums = [1,1,2,2,3,_]
+##### Input: nums = [1,1,1,2,2,3]
+##### Output: 5, nums = [1,1,2,2,3,_]
 ###### Explanation: Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively. It does not matter what you leave beyond the returned k (hence they are underscores).
 
-<button onclick="toggleCode('code1')">Cevabı Gör</button>
-<pre id="code1" style="display:none;">
+<details>
+<summary>Answer</summary>
+  
+  ```
 /**
  * @param {number[]} nums
  * @return {number}
@@ -44,7 +46,8 @@ function removeDuplicates(nums) {
     
     return writeIndex;
 }
-</pre>
+```
+
 
 ## Jump Games II
 You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0].
@@ -57,12 +60,13 @@ Return the minimum number of jumps to reach nums[n - 1]. The test cases are gene
 
 #### Example 1:
 
-#### Input: nums = [2,3,1,1,4]
-#### Output: 2
-#### Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
+##### Input: nums = [2,3,1,1,4]
+##### Output: 2
+##### Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
 
-<button onclick="toggleCode('code2')">Cevabı Gör</button>
-<pre id="code2" style="display:none;">
+<details>
+<summary>Answerrr</summary>
+  ```
 const canJump = (nums) => {
     let farthest = 0;
     
@@ -73,15 +77,4 @@ const canJump = (nums) => {
     
     return false;
 };
-</pre>
-
-<script>
-function toggleCode(id) {
-    const codeBlock = document.getElementById(id);
-    if (codeBlock.style.display === "none") {
-        codeBlock.style.display = "block";
-    } else {
-        codeBlock.style.display = "none";
-    }
-}
-</script>
+```
