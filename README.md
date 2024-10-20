@@ -18,13 +18,7 @@ Do not allocate extra space for another array. You must do this by modifying the
 ###### Explanation: Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively. It does not matter what you leave beyond the returned k (hence they are underscores).
 
 <details>
-<summary>Answer</summary>
-  
-  ```
-/**
- * @param {number[]} nums
- * @return {number}
- */
+<summary>Answer</summary>```
 function removeDuplicates(nums) {
     if (nums.length === 0) return 0;
     
@@ -45,8 +39,7 @@ function removeDuplicates(nums) {
     }
     
     return writeIndex;
-}
-```
+}```
 
 
 ## Jump Games II
@@ -54,7 +47,6 @@ You are given a 0-indexed array of integers nums of length n. You are initially 
 
 Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where:
 
-```0 <= j <= nums[i] and i + j < n```
 
 Return the minimum number of jumps to reach nums[n - 1]. The test cases are generated such that you can reach nums[n - 1].
 
@@ -66,8 +58,7 @@ Return the minimum number of jumps to reach nums[n - 1]. The test cases are gene
 
 <details>
 <summary>Answerrr</summary>
-  ```
-const canJump = (nums) => {
+```const canJump = (nums) => {
     let farthest = 0;
     
     for (let i = 0; i <= farthest; i++) {
@@ -76,5 +67,5 @@ const canJump = (nums) => {
     }
     
     return false;
-};
-```
+};```
+</details>
